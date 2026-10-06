@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick SpinLaundry  | Clean Clothes, Zero Hassle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="2" width="18" height="20" rx="3"/><circle cx="12" cy="14" r="4"/><circle cx="7" cy="5.5" r=".6"/><circle cx="10" cy="5.5" r=".6"/>
+        </svg>
+        Quick Spin<span>Laundry</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-primary btn-sm open-modal">Book a Service</button>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="container hero-inner">
+      <span class="badge"> Pickup &amp; delivery available</span>
+      <h1>Fresh clothes.<br /><span class="gradient-text">Zero hassle.</span></h1>
+      <p class="tagline"> We wash, press, and care for your clothes so you can spend your time on what matters.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg open-modal">Book a Service</button>
+        <a href="#services" class="btn btn-ghost btn-lg">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Services</h2>
+        <p>Professional care for every fabric, every time.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="3"/><circle cx="12" cy="14" r="4.5"/><path d="M9.5 14c1 -1 2 1 3 0s2 0 2.5 .5"/><path d="M7 5.5h.01M10 5.5h.01"/></svg>
+          </div>
+          <h3>Washing</h3>
+          <p>Gentle, thorough machine washing with premium detergents that leave clothes soft, bright, and fresh-smelling.</p>
+          <button class="card-link open-modal">Book now →</button>
+        </article>
+
+        <article class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a2 2 0 1 1 2 2c-1 .4-2 1-2 2v1"/><path d="M12 8 3 15.5a1.5 1.5 0 0 0 1 2.5h16a1.5 1.5 0 0 0 1-2.5L12 8z"/></svg>
+          </div>
+          <h3>Dry Cleaning</h3>
+          <p>Expert treatment for suits, dresses, and delicate fabrics. Stains out, shape and color preserved.</p>
+          <button class="card-link open-modal">Book now →</button>
+        </article>
+
+        <article class="card">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17h18c0-5-3-9-8-9H9a6 6 0 0 0-6 6v3z"/><path d="M3 17v2h18v-2"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+          </div>
+          <h3>Ironing</h3>
+          <p>Crisp, wrinkle-free finishing, neatly folded or hung and ready to wear the moment it arrives.</p>
+          <button class="card-link open-modal">Book now →</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <!-- TESTIMONIALS hero -->
+  <section class="testimonials" id="testimonials">
+  <section class="page-hero">
+    <div class="bubble b1"></div>
+    <div class="bubble b3"></div>
+    <div class="container page-hero-inner">
+      <span class="badge">💬 Real words from real customers</span>
+      <h1>Loved by <span class="gradient-text">happy customers</span></h1>
+      <p class="tagline">Don't just take our word for it. Here's what people say after getting their clothes back fresh.</p>
+
+      <div class="stats">
+        <div class="stat"><strong>4.9</strong><span>Average rating</span></div>
+        <div class="stat"><strong>2,500+</strong><span>Orders cleaned</span></div>
+        <div class="stat"><strong>98%</strong><span>Would recommend</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="filters" id="filters" role="tablist" aria-label="Filter testimonials">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="washing">Washing</button>
+        <button class="chip" data-filter="dry-cleaning">Dry Cleaning</button>
+        <button class="chip" data-filter="ironing">Ironing</button>
+      </div>
+
+      <div class="t-grid" id="tGrid">
+
+        <article class="t-card" data-service="washing">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">“My clothes came back soft, bright and smelling amazing. I've stopped doing laundry on weekends entirely.”</p>
+          <div class="person">
+            <div class="avatar">AJ</div>
+            <div><h4>Ada Johnson</h4><span>Washing</span></div>
+          </div>
+        </article>
+
+        <article class="t-card" data-service="dry-cleaning">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">“They saved my favorite suit. A wine stain I thought was permanent disappeared completely.”</p>
+          <div class="person">
+            <div class="avatar">MO</div>
+            <div><h4>Michael Okafor</h4><span>Dry Cleaning</span></div>
+          </div>
+        </article>
+
+        <article class="t-card" data-service="ironing">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">“Crisp shirts, perfectly folded, every single time. My Monday mornings are so much easier now.”</p>
+          <div class="person">
+            <div class="avatar">FB</div>
+            <div><h4>Fatima Bello</h4><span>Ironing</span></div>
+          </div>
+        </article>
+
+        <article class="t-card" data-service="washing">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">“Pickup was on time, and everything was returned the next day. Super reliable and friendly team.”</p>
+          <div class="person">
+            <div class="avatar">DE</div>
+            <div><h4>David Eze</h4><span>Washing</span></div>
+          </div>
+        </article>
+
+        <article class="t-card" data-service="dry-cleaning">
+          <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+          <p class="quote">“Handled my wedding guest dress with real care. It looked brand new, and the price was fair.”</p>
+          <div class="person">
+            <div class="avatar">SA</div>
+            <div><h4>Sarah Adams</h4><span>Dry Cleaning</span></div>
+          </div>
+        </article>
+
+        <article class="t-card" data-service="ironing">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">“I send a big bag of work clothes every week. Not one wrinkle, and never a missing item.”</p>
+          <div class="person">
+            <div class="avatar">IY</div>
+            <div><h4>Ibrahim Yusuf</h4><span>Ironing</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  </section>
+
+
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready for a fresher wardrobe?</h2>
+      <button class="btn btn-white btn-lg open-modal">Book a Service</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <p class="logo-text">Quick Spin<span>Laundry</span></p>
+      <p>booking@quickspin.com · Mon–Sat, 8am–7pm</p>
+      <p class="copy">&copy; <span id="year"></span> Quick Spin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+
+      <form id="bookingForm" novalidate>
+        <h2 id="modalTitle">Book a Service</h2>
+        <p class="modal-sub">Tell us what you need and when. We'll take it from there.</p>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" placeholder="e.g. Ada Johnson" required />
+        </div>
+
+        <div class="field">
+          <label for="date">Service date</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="field">
+          <label for="details">Service details</label>
+          <textarea id="details" rows="4" placeholder="e.g. 2 suits for dry cleaning, 10 shirts to wash and iron…" required></textarea>
+        </div>
+
+        <p class="error" id="formError" role="alert"></p>
+
+        <button type="submit" class="btn btn-primary btn-block send-btn">
+          <span>Send Request</span>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
+        </button>
+      </form>
+
+      <div class="success" id="successBox">
+        <svg class="check" viewBox="0 0 52 52">
+          <circle class="check-circle" cx="26" cy="26" r="24" fill="none"/>
+          <path class="check-mark" fill="none" d="M14 27l8 8 16-17"/>
+        </svg>
+        <h3>Request sent!</h3>
+        <p>Your email app should open with your booking. We'll confirm shortly.</p>
+        <button class="btn btn-primary" id="doneBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
